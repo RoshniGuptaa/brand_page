@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: "Poppins",sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#btn{
+  all:unset;
+  background-color: #D01C28;
+  color: white;
+  padding: 6px 16px;
+  
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  height: 32px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
+  max-width: 1280px;
+  margin:0 auto;
+  height: 72px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  
+}
+.hero {
+  display: flex;
+  height: calc(100vh-72px);
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero h1{
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+.hero p{
+  font-weight: 600;
+  color: grey;
+  max-width: 400px;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 40px;
+ 
+}
+.primary-btn{
+  background-color: #D01C28;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.secondary-btn{
+  color: grey;
+  background-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.available p{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.brand-icons{
+  display: flex;
+  gap: 16px;
 }
